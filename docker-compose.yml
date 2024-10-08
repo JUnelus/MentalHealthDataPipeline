@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  mental_health_pipeline:
+    build: .
+    env_file:
+      - .env
+    command: ["python", "src/pipeline.py"]
